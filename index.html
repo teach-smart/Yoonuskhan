@@ -159,3 +159,131 @@
 </body>
 </html>
 ```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yoonuskhan Educational Website</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f4f7fb;
+      color: #333;
+    }
+
+    header {
+      background: #2563eb;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background: #1e40af;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 15px;
+      font-weight: bold;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .hero h1 {
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      margin-bottom: 25px;
+    }
+
+    .btn {
+      background: #2563eb;
+      color: white;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+</html>22<!DOCTYPE html>
+</section>
+
+<section class="section" id="login">
+  <h2>Teacher Login</h2>
+
+  <form onsubmit="login(event)">
+    <input type="text" id="username" placeholder="Username" required>
+    <br>
+    <input type="password" id="password" placeholder="Password" required>
+    <br>
+    <button class="btn" type="submit">Login</button>
+  </form>
+
+  <p id="message"></p>
+</section>
+
+<section class="section" id="services">
+  <h2>Our Features</h2>
+
+  <div class="cards">
+    <div class="card">
+      <h3>Lesson Plans</h3>
+      <p>Create and manage lesson plans easily.</p>
+    </div>
+
+    <div class="card">
+      <h3>Attendance</h3>
+      <p>Track student attendance quickly.</p>
+    </div>
+
+    <div class="card">
+      <h3>Scratch Learning</h3>
+      <p>Teach programming and ICT activities.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Yoonuskhan Educational Website</p>
+</footer>
+
+<script>
+function login(event) {
+  event.preventDefault();
+
+  let u = document.getElementById('username').value;
+  let p = document.getElementById('password').value;
+
+  if(u === "teacher" && p === "1234") {
+    document.getElementById('message').innerHTML = "Login Successful ✔";
+    document.getElementById('message').style.color = "green";
+
+    setTimeout(() => {
+      document.getElementById('services').scrollIntoView({behavior:'smooth'});
+    }, 500);
+
+  } else {
+    document.getElementById('message').innerHTML = "Wrong username or password ❌";
+    document.getElementById('message').style.color = "red";
+  }
+}
+</scrpt>
+
+</body>
+</html>i
